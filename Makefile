@@ -1,7 +1,7 @@
-all: env-update proute tungsten pir 
+all: proute tungsten pir 
 
 env: 
-	virtualenv -p python3.6 env
+	virtualenv -p python3 env
 
 env-update: env requirements.txt
 	env/bin/pip install -r requirements.txt
